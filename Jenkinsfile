@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   tools {
-    maven 'Maven_3.8.6' // or whatever version you've configured
+    maven 'Maven_3.8.6'
   }
 
   stages {
@@ -24,7 +24,7 @@ pipeline {
       echo '✅ Build and dependency resolution succeeded!'
     }
     failure {
-      echo '❌ Build failed — check Maven output'
+      echo '❌ Build failed – check Maven output'
     }
   }
 }
