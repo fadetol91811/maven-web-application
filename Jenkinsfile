@@ -1,10 +1,6 @@
 pipeline {
   agent any
 
-  tools {
-    maven 'Maven_3.8.6'
-  }
-
   stages {
     stage('Checkout') {
       steps {
@@ -27,4 +23,4 @@ pipeline {
       echo '❌ Build failed – check Maven output'
     }
   }
-}
+} 
